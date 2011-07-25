@@ -142,25 +142,25 @@ type& bcvector<type>::operator [](int index)
 	}
 	else
 	{
-		cout	<< endl
-			<< "bcvector.h: In member function "
-			<< "'template <class type>bcvector<type>&"
-			<< "bcvector<type>::operator [](int index) "
-			<< endl
-			<< "bcvector.h: error: "
-			<< "'index' of "
-			<< index
-			<< " is out of bounds! "
-			<< "'index' must be greater than 0 and less than "
-			<< list_size
-			<< endl << endl;
+		cerr	<< endl
+				<< "bcvector.h: In member function "
+				<< "'template <class type>bcvector<type>&"
+				<< "bcvector<type>::operator [](int index) "
+				<< endl
+				<< "bcvector.h: error: "
+				<< "'index' of "
+				<< index
+				<< " is out of bounds! "
+				<< "'index' must be greater than 0 and less than "
+				<< list_size
+				<< endl << endl;
 
-		cout << "Press ENTER to terminate program...";
+		cerr << "Press <ENTER> to terminate program...";
 
 		cin.get();
 
-		// Exits program returning the value '-1'
-		exit(-1);
+		// Exits program
+		exit(EXIT_FAILURE);
 	}
 }
 
@@ -175,25 +175,25 @@ const type& bcvector<type>::operator [](int index) const
 	}
 	else
 	{
-		cout	<< endl
-			<< "bcvector.h: In member function "
-			<< "'template <class type>bcvector<type>&"
-			<< "bcvector<type>::operator [](int index) "
-			<< endl
-			<< "bcvector.h: error: "
-			<< "'index' of "
-			<< index
-			<< " is out of bounds! "
-			<< "'index' must be greater than 0 and less than "
-			<< list_size
-			<< endl << endl;
+		cerr	<< endl
+				<< "bcvector.h: In member function "
+				<< "'template <class type>bcvector<type>&"
+				<< "bcvector<type>::operator [](int index) "
+				<< endl
+				<< "bcvector.h: error: "
+				<< "'index' of "
+				<< index
+				<< " is out of bounds! "
+				<< "'index' must be greater than 0 and less than "
+				<< list_size
+				<< endl << endl;
 
-		cout << "Press ENTER to terminate program...";
+		cerr << "Press <ENTER> to terminate program...";
 
 		cin.get();
 
-		// Exits program returning the value '-1'
-		exit(-1);
+		// Exits program
+		exit(EXIT_FAILURE);
 	}
 }
 
